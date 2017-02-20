@@ -1,0 +1,44 @@
+/*common*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear{
+    zoom:1;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.gradient{
+    background: -webkit-linear-gradient(top,#fff,#f8f8f8);
+    background: -moz-linear-gradient(top,#fff,#f8f8f8);
+    background: -ms-linear-gradient(top,#fff,#f8f8f8);
+    background: linear-gradient(top,#fff,#f8f8f8);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#fff, endColorstr=#f8f8f8)";;
++background:#f9f9f9;
+}
+/*三角形*/
+.triangle_up,.triangle_down_red,.triangle_down_gray{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    _border-left: 4px solid #fff;
+    _border-right: 4px solid #fff;
+}
+.triangle_up{
+    border-bottom: 4px solid #ca0309;
+}
+.triangle_down_red{
+    border-top: 4px solid #ca0309;
+}
+.triangle_down_gray{
+    border-top: 4px solid #c4bdbd;
+}
+
